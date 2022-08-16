@@ -1,0 +1,15 @@
+:root {
+  /* Main */
+  --color-bg-main: #E5E5E5;
+  --color-text-main: #060606;
+
+  /* Card */
+  --color-card-bg: #14213D;
+  --color-card-text: #FEFEFE;
+
+    /* Body */
+    --body-margin: 0;
+    --body-padding: 0;
+    --body-bg-color: var(--color-bg-main);
+    --body-text-color: var(--color-text-main);
+}
