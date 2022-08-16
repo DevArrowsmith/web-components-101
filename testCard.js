@@ -1,7 +1,7 @@
 class TestCard extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = `TestCard Element`
+    this.innerHTML = `${this.getAttribute('name')}`
   }
 }
 
