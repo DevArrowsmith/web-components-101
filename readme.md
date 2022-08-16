@@ -24,6 +24,20 @@ An element created by us.
     <script src="testCard.js"></script>
   </body>
   ```
+- Can take attributes and pass these into the element's innerHTML.
+  ```
+  // testCard.js
+  class TestCard extends HTMLElement {
+    constructor() {
+      super();
+      this.innerHTML = `${this.getAttribute('name')}`
+    }
+  }
+
+  // index.html
+  <test-card name="Stede Bonnet"></test-card>
+  ```
+
 ---
 
 ## Resources
