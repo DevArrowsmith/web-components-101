@@ -1,6 +1,0 @@
-body {
-  margin: var(--body-margin);
-  padding: var(--body-padding);
-  color: var(--body-text-color);
-  background-color: var(--body-bg-color);
-}

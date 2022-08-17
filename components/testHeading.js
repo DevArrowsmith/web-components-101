@@ -1,7 +1,7 @@
 class TestHeading extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = `<h3>${this.getAttribute('name')}</h3>`
+    this.innerHTML = `<h2>${this.getAttribute('text')}</h2>`
   }
 }
 
