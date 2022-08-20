@@ -1,5 +1,5 @@
-const template = document.createElement('template');
-template.innerHTML = ` 
+const testCardTemplate = document.createElement('template');
+testCardTemplate.innerHTML = ` 
   <link rel="stylesheet" href="../styles/components/testCard.css" />
 
   <div class="test-card">
@@ -13,7 +13,7 @@ class TestCard extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open'});
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.shadowRoot.appendChild(testCardTemplate.content.cloneNode(true));
     this.shadowRoot.querySelector('.test-card__title').innerText = this.getAttribute('title');
     this.shadowRoot.querySelector('.test-card__subtitle').innerText = this.getAttribute('subtitle');
     this.shadowRoot.querySelector('.test-card__flavour-text').innerText = this.getAttribute('flavour-text');

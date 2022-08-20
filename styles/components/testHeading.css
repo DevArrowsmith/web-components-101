@@ -1,3 +1,9 @@
-test-heading {
+@import url(../variables.css);
+
+.test-heading {
+  font-family: var(--font-heading-1);
+  font-size: 1.8rem;
   color: var(--color-blue-1);
+  width: 100vw;
+  text-align: center;
 }
