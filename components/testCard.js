@@ -1,20 +1,22 @@
 const template = document.createElement('template');
 template.innerHTML = ` 
-  <style>
-    h3 {
-      color: var(--card-color-text)
-      background-color: var(--card-color-bg)
-    }
-  </style>
+  <link rel="stylesheet" href="../styles/components/testCard.css" />
+
   <div class="test-card">
-    <h3>${this.getAttribute('name')}</h3>
+    <h3 class="test-card__title"></h3>
+    <h4 class="test-card__subtitle"></h4>
+    <p class="test-card__flavour-text"></p>
   </div>
 `;
 
 class TestCard extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = ``
+    this.attachShadow({ mode: 'open'});
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.shadowRoot.querySelector('.test-card__title').innerText = this.getAttribute('title');
+    this.shadowRoot.querySelector('.test-card__subtitle').innerText = this.getAttribute('subtitle');
+    this.shadowRoot.querySelector('.test-card__flavour-text').innerText = this.getAttribute('flavour-text');
   }
 }
 
