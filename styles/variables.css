@@ -1,3 +1,6 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Gloria+Hallelujah&display=swap');
+
 :root {
   /* Colors */
   --color-black-1: #060606;
@@ -5,4 +8,8 @@
   --color-orange-1: #FCA311;
   --color-white-1: #FEFEFE;
   --color-white-2: #E5E5E5;
+
+  /* Fonts */  
+  --font-heading-1: 'Gloria Hallelujah', cursive;
+  --font-long-text-1: 'Crimson Text', serif;
 }
