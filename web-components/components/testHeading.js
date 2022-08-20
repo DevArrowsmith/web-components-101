@@ -1,6 +1,6 @@
 const testHeadingTemplate = document.createElement('template');
 testHeadingTemplate.innerHTML = ` 
-  <link rel="stylesheet" href="../styles/components/testHeading.css" />
+  <link rel="stylesheet" href="../../styles/components/testHeading.css" />
 
   <h2 class="test-heading"></h2>
 `;

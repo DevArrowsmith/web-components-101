@@ -1,6 +1,6 @@
 const testCardTemplate = document.createElement('template');
 testCardTemplate.innerHTML = ` 
-  <link rel="stylesheet" href="../styles/components/testCard.css" />
+  <link rel="stylesheet" href="../../styles/components/testCard.css" />
 
   <div class="test-card">
     <h3 class="test-card__title"></h3>
